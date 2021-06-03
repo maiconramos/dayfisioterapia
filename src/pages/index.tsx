@@ -1,5 +1,21 @@
 import Head from 'next/head'
+import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+
+
+const normalizeSrc = (src) => {
+  return src[0] === "/" ? src.slice(1) : src;
+};
+
+const cloudflareLoader = ({ src, width, quality }) => {
+  const params = [`width=${width}`];
+  if (quality) {
+    params.push(`quality=${quality}`);
+  }
+  const paramsString = params.join(",");
+  return `/cdn-cgi/image/${paramsString}/${normalizeSrc(src)}`;
+};
+
 
 export default function Home() {
   return (
@@ -11,7 +27,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-      <img src="/logo.svg" alt="Day Fisioterapia" width={300} height={200} />
+      <Image loader={cloudflareLoader} src="/logo.svg" alt="Day Fisioterapia" width={300} height={200} />
         <h1 className={styles.title}>
           
         </h1>
