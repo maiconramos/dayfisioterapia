@@ -13,9 +13,8 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-      <img src="/logo.svg" alt="Day Fisioterapia" width={300} height={150} />
+      <img src="/logo.svg" alt="Day Fisioterapia" width={200} height={88} />
         <p className={styles.title}>@fisioterapiaday</p>
-
         <LinkSocial link="https://wa.me.com/5519993654693" title="Agendar pelo Whatsapp" image={'/whatsapp.svg'} />
         <LinkSocial link="https://www.facebook.com/day.fisioterapia" title="Página do Facebook" image={'/facebook.svg'} />
         <LinkSocial link="https://instagram.com/fisioterapiaday" title="Acesse o Instagram" image={'/instagram.svg'} /> 
