@@ -22,7 +22,7 @@ export default function Home() {
         <LinkSocial link="https://dayfisioterapia.com.br" title="Nosso Site" image={'/web.svg'} />
         <LinkSocial link="https://ul.waze.com/ul?ll=-22.79976258%2C-47.21721053&navigate=yes&zoom=17&utm_campaign=waze_website&utm_source=waze_website&utm_medium=lm_share_location" title="Ir até o local com Waze" image={'/waze.svg'} />
         <LinkSocial link="https://g.page/fisioterapiaday?share" title="Ir com Google Maps" image={'/google-maps.svg'} />
-        
+        <a href="/amora.pdf"></a>
       </main>
     </div>
   )
