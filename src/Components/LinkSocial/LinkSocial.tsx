@@ -5,9 +5,10 @@ type LinkSocialProps = {
     link: string,
     title: string,
     image: string,
+    id: string,
 }
 
-const LinkSocial = ({link , title, image} : LinkSocialProps) => {
+const LinkSocial = ({link , title, image, id} : LinkSocialProps) => {
     return (
         <>
              <a
@@ -15,6 +16,7 @@ const LinkSocial = ({link , title, image} : LinkSocialProps) => {
                 href={link} 
                 title={title}
                 target="_blank"
+                id={id}
                 >
                  <img src={image} alt={title} title={title} width="32" height="32" />
                  <span>{title}</span>
