@@ -38,7 +38,6 @@ export default function Home() {
         <LinkSocial link="https://www.facebook.com/day.fisioterapia" id="facebook" title="Página do Facebook" image={'/facebook.svg'} />
         <LinkSocial link="https://instagram.com/fisioterapiaday" id="instagram" title="Acesse o Instagram" image={'/instagram.svg'} /> 
         <LinkSocial link="mailto:contato@dayfisioterapia.com.br" id="email" title="Enviar um e-mail" image={'/mail.svg'} /> 
-        <LinkSocial link="https://dayfisioterapia.com.br" id="site" title="Nosso Site" image={'/web.svg'} style={{display: 'none'}} />
         <LinkSocial link="https://ul.waze.com/ul?ll=-22.79976258%2C-47.21721053&navigate=yes&zoom=17&utm_campaign=waze_website&utm_source=waze_website&utm_medium=lm_share_location" id="waze" title="Ir até o local com Waze" image={'/waze.svg'} />
         <LinkSocial link="https://g.page/fisioterapiaday?share" id="google" title="Ir com Google Maps" image={'/google-maps.svg'} />
       </main>
